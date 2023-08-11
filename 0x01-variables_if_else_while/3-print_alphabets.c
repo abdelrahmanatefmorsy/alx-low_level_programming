@@ -17,12 +17,12 @@ int main(void)
 		putchar(c);
 		c++;
 	}
-	char s = 'A';
+	 c = 'A';
 
-	while (s <= 'Z')
+	while (c <= 'Z')
 	{
-		putchar(s);
-		s++;
+		putchar(c);
+		c++;
 	}
 	putchar('\n');
 	return (0);
