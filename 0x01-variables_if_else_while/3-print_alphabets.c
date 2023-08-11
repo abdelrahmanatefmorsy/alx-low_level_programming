@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+/**
+ * main - entry point
+ *
+ * Description: putchar
+ *
+ * Return: 0 (Success)
+ */
+
+int main(void)
+{
+	char c = 'a';
+
+	while (c <= 'z')
+	{
+		putchar(c);
+		c++;
+	}
+	char s = 'A';
+
+	while (s <= 'Z')
+	{
+		putchar(s);
+		s++;
+	}
+	putchar('\n');
+	return (0);
+}
