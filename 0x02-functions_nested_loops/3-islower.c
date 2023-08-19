@@ -3,7 +3,7 @@
 /**
  * _islower- entry point
  *
- * * Description: print putchar
+ * @c: saged
  *
  * * Return: 0 or 1
  */
