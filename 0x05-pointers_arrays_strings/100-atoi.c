@@ -29,7 +29,10 @@ int _atoi(char *s)
 			j += s[i] - '0';
 			i++;
 			if (s[i] == '\0')
+			{
+				j *= z;
 				return (j);
+			}
 		}
 		j *= z;
 		if (two == 0)
