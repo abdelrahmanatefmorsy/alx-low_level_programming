@@ -14,15 +14,16 @@ int _atoi(char *s)
 {
 	int i = 0;
 	int j = 0;
-	int one = 1;
 	int two = 1;
+	int z = 1;
 
 	while (s[i] != '\0')
 	{
+		if (s[i] == '-')
+			z *= -1;
+
 		while (s[i] >= '0' && s[i] <= '9')
 		{
-			if (s[i - 1] == '-')
-				one = 0;
 			two = 0;
 			j *= 10;
 			j += s[i] - '0';
@@ -30,8 +31,7 @@ int _atoi(char *s)
 			if (s[i] == '\0')
 				return (j);
 		}
-		if (one == 0)
-			j *= -1;
+		j *= z;
 		if (two == 0)
 			return (j);
 		i++;
