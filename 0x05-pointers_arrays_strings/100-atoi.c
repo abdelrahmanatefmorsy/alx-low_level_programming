@@ -13,7 +13,7 @@
 int _atoi(char *s)
 {
 	int i = 0;
-	int j = 0;
+	unsigned int j = 0;
 	int two = 1;
 	int z = 1;
 
