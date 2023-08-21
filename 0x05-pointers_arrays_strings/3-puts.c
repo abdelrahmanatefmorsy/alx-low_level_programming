@@ -12,9 +12,7 @@
 
 void _puts(char *str)
 {
-	int p;
-
-	for (p = 0; *str != '\0'; str++)
+	for (; *str != '\0'; str++)
 		printf("%c", *str);
 	printf("\n");
 }
