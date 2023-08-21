@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * _strlen- entry point
@@ -13,6 +14,6 @@ int _strlen(char *s)
 {
 	int p;
 
-	p = sizeof(s);
+	p = strlen(s);
 	return (p);
 }
