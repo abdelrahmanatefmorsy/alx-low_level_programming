@@ -10,7 +10,7 @@
  * * Return: size of @s
  */
 
-void reverse_array(int *a, int n);
+void reverse_array(int *a, int n)
 {
 	int j;
 	int l;
