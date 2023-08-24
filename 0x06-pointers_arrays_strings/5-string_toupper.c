@@ -2,12 +2,12 @@
 #include <stdio.h>
 
 /**
- *_strncpy- entry point
+ *string_toupper- entry point
  *@s:agoda
  * * Return: size of @s
  */
 
-char *string_toupper(char *s);
+char *string_toupper(char *s)
 {
 	int j;
 
