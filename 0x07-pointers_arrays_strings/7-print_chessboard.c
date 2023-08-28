@@ -10,7 +10,7 @@
  * * Return: size of @s
  */
 
-void print_chessboard(char (*a)[8]);
+void print_chessboard(char (*a)[8])
 {
 	int i;
 	int j;
