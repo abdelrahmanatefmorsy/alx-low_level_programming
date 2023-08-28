@@ -2,11 +2,10 @@
 #include <stdio.h>
 
 /**
- *_memcpy- entry point
+ *_strchr- entry point
  *
- * @src: string that will access
- * @dest: the character that will remove
- * @n: the length that will replace
+ * @s: string that will access
+ * @c: the length that will replace
  *
  *
  * * Return: size of @s
