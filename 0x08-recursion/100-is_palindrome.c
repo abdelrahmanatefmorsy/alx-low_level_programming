@@ -47,5 +47,5 @@ int index(char *s)
 
 int is_palindrome(char *s)
 {
-	return (_square(s, index(*s) - 1, 0));
+	return (_square(s, index(s) - 1, 0));
 }
