@@ -23,18 +23,18 @@ int _square(char *s, int i, int n)
 }
 
 /**
- *index- entry point
+ *_oindex- entry point
  *@s:pow
  * * Return: size of @s
  */
 
-int index(char *s)
+int _oindex(char *s)
 {
 	int i = 0;
 
 	if (*s != '\0')
 	{
-		i +=  index(s + 1) + 1;
+		i +=  _oindex(s + 1) + 1;
 	}
 	return (i);
 }
@@ -47,5 +47,5 @@ int index(char *s)
 
 int is_palindrome(char *s)
 {
-	return (_square(s, index(s) - 1, 0));
+	return (_square(s, _oindex(s) - 1, 0));
 }
