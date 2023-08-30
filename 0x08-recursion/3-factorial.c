@@ -10,15 +10,13 @@
  * * Return: size of @s
  */
 
-int factorial(int n);
+int _strlen_recursion(char *s)
 {
-	if (n < 0)
+	int i = 0;
+
+	if (*s != '\0')
 	{
-		return -1;
+		i += _strlen_recursion(s + 1) + 1;
 	}
-	if (n == 1)
-	{
-		return 1;
-	}
-	return n * factorial(n-1);
+	return (i);
 }
