@@ -18,7 +18,7 @@ int _square(int n, int t)
 	{
 		return (t);
 	}
-	_square(n, t + 1);
+	return (_square(n, t + 1));
 }
 
 /**
