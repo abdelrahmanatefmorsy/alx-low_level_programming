@@ -10,7 +10,7 @@
 
 int _square(int n, int t)
 {
-	if (t == n)
+	if (t * t > n)
 	{
 		return (-1);
 	}
