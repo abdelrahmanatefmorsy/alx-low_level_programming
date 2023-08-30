@@ -2,17 +2,6 @@
 #include <stdio.h>
 
 /**
- *_sqrt_recursion- entry point
- *@n:pow
- * * Return: size of @s
- */
-
-int _sqrt_recursion(int n)
-{
-	return (_square(n, 1));
-}
-
-/**
  * _square- find sq
  * @n:number
  * @t:value
@@ -30,4 +19,15 @@ int _square(int n, int t)
 		return (t);
 	}
 	_square(n, t + 1);
+}
+
+/**
+ *_sqrt_recursion- entry point
+ *@n:pow
+ * * Return: size of @s
+ */
+
+int _sqrt_recursion(int n)
+{
+	return (_square(n, 1));
 }
