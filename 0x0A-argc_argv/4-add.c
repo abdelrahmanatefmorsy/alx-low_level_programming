@@ -17,7 +17,7 @@ int main(int argc, char const *argv[])
 	{
 		char *c;
 
-		for (c = *argv[i] ; *c ; c++)
+		for (c = argv[i] ; *c ; c++)
 		{
 			if (*c < '0' || *c > '9')
 			{
