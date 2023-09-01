@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <stdlib.h>
 /**
  * main-entry point
  * @argc:parameter
@@ -11,7 +11,7 @@ int main(int argc, char const *argv[])
 {
 	if (argc == 3)
 	{
-		printf("%d\n", argv[1] + argv[2]);
+		printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
 	}
 	else
 	{
