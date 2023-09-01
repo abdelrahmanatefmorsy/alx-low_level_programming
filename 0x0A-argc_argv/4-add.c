@@ -8,7 +8,7 @@
  * Return: 0 successful
  */
 
-int main(int argc, char const *argv[])
+int main(int argc, char *argv[])
 {
 	int sum = 0;
 	char *c;
