@@ -11,14 +11,13 @@
 
 int main(int argc, char const *argv[])
 {
-	int i = 1;
 	int sum = 0;
 
-	while (i < argc)
+	while (--argc)
 	{
 		char *c;
 
-		for (c = argv[i] ; *c ; c++)
+		for (c = argv[argc] ; *c ; c++)
 		{
 			if (*c < '0' || *c > '9')
 			{
@@ -26,8 +25,7 @@ int main(int argc, char const *argv[])
 				return (1);
 			}
 		}
-		sum += atoi(argv[i]);
-		i++;
+		sum += atoi(argv[argc]);
 	}
 	printf("%d\n", sum);
 	return (0);
