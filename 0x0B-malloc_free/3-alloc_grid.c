@@ -23,7 +23,7 @@ int **alloc_grid(int width, int height)
 			return (NULL);
 		for (j = 0 ; j < width; j++)
 		{
-			one[i][j] = alloc_grid[i][j];
+			one[i][j] = 0;
 		}
 	}
 	return (one);
