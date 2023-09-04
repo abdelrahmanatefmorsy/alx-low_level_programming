@@ -11,18 +11,16 @@
 
 char *_strdup(char *str)
 {
-	int i = 0;
+	unsigned int i = 0, j = 0;
+	char *c;
 
 	while (str[i] != '\0')
 	{
 		i++;
 	}
-	char *c = malloc(i * sizeof(char));
-
-	if (i == 0 || str == NULL)
+	c = malloc(i * sizeof(char));
+	if (i == 0 || str == NULL || c == NULL)
 		return (NULL);
-	int j = 0;
-
 	for (; j < i ; j++)
 		c[j] = str[j];
 	return (c);
