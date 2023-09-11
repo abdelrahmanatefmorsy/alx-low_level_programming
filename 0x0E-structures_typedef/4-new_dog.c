@@ -1,6 +1,6 @@
 #include "dog.h"
 #include <stdio.h>
-
+#include <stdlib.h>
 /**
  * size- calculate size of string
  * @s: string
@@ -50,7 +50,7 @@ char *fill(char *s1, char *s2)
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *d;
+	dog_t *dog;
 
 	if (!name || !owner || age < 0)
 	{
