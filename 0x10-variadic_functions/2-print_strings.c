@@ -35,4 +35,5 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	}
 	str = va_arg(ptr, char*);
 	printf("%s\n", str);
+	va_end(ptr);
 }
