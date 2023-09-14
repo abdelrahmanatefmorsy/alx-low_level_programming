@@ -5,6 +5,7 @@
 *print_strings - sum func
 *@n: arguments
 *@separator:char
+*@...: arg
 *Return: sum of all
 */
 
