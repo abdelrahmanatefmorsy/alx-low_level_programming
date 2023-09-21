@@ -5,7 +5,7 @@
  * @head: the pointer which start
  * Return: 0 success
  */
-void free_list(list_t *head);
+void free_list(list_t *head)
 {
 	list_t *count, h;
 
