@@ -9,9 +9,9 @@
 int sum_listint(listint_t *head)
 {
 	int i = 0;
-	const listint_t *count = h;
+	listint_t *count = head;
 
-	if (h == NULL)
+	if (head == NULL)
 		return (0);
 	while (count != NULL)
 	{
