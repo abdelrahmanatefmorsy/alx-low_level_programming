@@ -7,11 +7,11 @@
  */
 void free_listint2(listint_t **head)
 {
-	listint_t *count, **h;
+	listint_t *count;
+	listint_t **h = head;
 
-	if (!head)
-		return;
-	h = head;
+	if (head)
+	{
 	while (*head != NULL)
 	{
 		count = *head;
@@ -19,4 +19,5 @@ void free_listint2(listint_t **head)
 		*head = (*head)->next;
 	}
 	*h = NULL;
+	}
 }
