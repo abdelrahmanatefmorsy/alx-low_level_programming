@@ -1,9 +1,9 @@
 #include "main.h"
 
-/*
-*binary_to_uint - fuction to convert saged to binary
+/**
+* binary_to_uint - fuction to convert saged to binary
 * @b: string that will convert
-*Return: saged
+* Return: saged
 */
 
 unsigned int binary_to_uint(const char *b)
@@ -14,7 +14,7 @@ unsigned int binary_to_uint(const char *b)
 	while (b[i])
 		i++;
 	i--;
-	while(i >= 0)
+	while (i >= 0)
 	{
 		if (b[i] != '0' && b[i] != '1')
 			return (0);
