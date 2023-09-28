@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
-* binary_to_uint - fuction to convert saged to binary
-* @b: string that will convert
+* print_binary - fuction to convert saged to binary
+* @n: string that will convert
 * Return: saged
 */
 
