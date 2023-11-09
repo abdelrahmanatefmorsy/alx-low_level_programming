@@ -5,7 +5,7 @@
  * @h: the pointer which start
  * Return: 0 success
  */
-size_t dlistint_len(const list_t *h)
+size_t dlistint_len(const dlistint_t *h)
 {
 	int i = 0;
 	const dlistint_t *count = h;
