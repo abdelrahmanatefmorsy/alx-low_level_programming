@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * print_list- print the list
+ * print_dlistint- print the list
  * @h: the pointer which start
  * Return: 0 success
  */
