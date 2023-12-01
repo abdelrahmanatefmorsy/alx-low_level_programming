@@ -1,7 +1,7 @@
 #include "hash_tables.h"
 
 /**
- * hash_table_delete- del  hash
+ * hash_table_delete - del  hash
  * @ht: hash
  * Return: null
  */
