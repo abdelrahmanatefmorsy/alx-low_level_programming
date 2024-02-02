@@ -21,7 +21,6 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	index = key_index((unsigned char *)key, size);
 	if (!index)
 		return (0);
-	current = malloc(sizeof(hash_node_t *));
 	current = ht->array[index];
 	while (current)
 	{
@@ -58,7 +57,7 @@ int add(hash_table_t *ht, const char *key, const char *value,
 {
 	hash_node_t *node;
 
-	node = malloc(sizeof(hash_node_t *));
+	node = malloc(sizeof(hash_node_t ));
 	if (!node)
 		return (0);
 	node->value  = strdup(value);
