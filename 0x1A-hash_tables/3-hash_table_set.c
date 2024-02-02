@@ -5,19 +5,21 @@
  * @ht: hash table that created
  * @key : key of value
  * @value : value
+ * Return: 1 or 0
  */
 
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
-	hash_node_t *last, *current;
+	hash_node_t *current;
+	int new;
 	unsigned int size, index;
 
 
 	size = ht->size;
-	if(!size || !key || !value)
+	if (!size || !key || !value)
 		return (0);
-	index = key_index(key, size);
-	if(!index)
+	index = key_index((unsigned char *)key, size);
+	if (!index)
 		return (0);
 	current = malloc(sizeof(hash_node_t *));
 	current = ht->array[index];
@@ -26,10 +28,10 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		if (strcmp(current->key, key) == 0)
 		{
 			free(current->value);
-			current->value = malloc(strlen(value)+1);
+			current->value = malloc(strlen(value) + 1);
 			if (current->value == NULL)
 				return (0);
-			curren->value = strdup(value);
+			current->value = strdup(value);
 			if (!current->value)
 			{
 				free(current->value);
@@ -39,6 +41,6 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		}
 		current = current->next;
 	}
-	new = add(*ht, key, value);
+	new = add(ht, key, value, index);
 	return (new);
 }
