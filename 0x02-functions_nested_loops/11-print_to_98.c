@@ -11,6 +11,7 @@
 void print_int(int c)
 {
 	int x = 1;
+
 	while (c / x > 0)
 		x  = x * 10;
 	while (x > 0)
