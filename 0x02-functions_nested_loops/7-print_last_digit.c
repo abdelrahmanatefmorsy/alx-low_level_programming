@@ -12,6 +12,7 @@
 int print_last_digit(int x)
 {
 	long n = x;
+
 	if (n < 0)
 		n = n * -1;
 	n = n % 10;
