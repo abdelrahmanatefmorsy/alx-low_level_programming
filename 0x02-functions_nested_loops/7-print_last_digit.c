@@ -4,7 +4,7 @@
 /**
  * print_last_digit- entry point
  *
- * @n: saged
+ * @x: saged
  *
  * * Return: 0
  */
