@@ -16,7 +16,10 @@ int main(void)
 	{
 		putchar(c);
 		if (c != '9')
-			printf(", ");
+		{
+			putchar(',');
+			putchar(' ');
+		}
 		c++;
 	}
 	putchar('\n');
