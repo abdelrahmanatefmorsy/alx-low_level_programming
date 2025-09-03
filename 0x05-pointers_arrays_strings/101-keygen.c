@@ -22,5 +22,5 @@ int main()
     }
     c[23] = '\0';
     printf("%s\n" ,c);
-    
+   return (0); 
 }
