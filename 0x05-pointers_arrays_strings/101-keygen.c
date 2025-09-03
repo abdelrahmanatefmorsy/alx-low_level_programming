@@ -20,6 +20,6 @@ int main()
         c[i] = 'z';
     }
     c[23] = '\0';
-    printf("%s" ,c);
+    printf("%s\n" ,c);
     
 }
