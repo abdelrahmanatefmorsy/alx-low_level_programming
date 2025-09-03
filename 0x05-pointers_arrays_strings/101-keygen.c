@@ -13,9 +13,9 @@
 
 int main()
 {
+	int i;
     char c[40];
     c[0] = 'X';
-    int i;
     for (i = 1; i <=22; i++)
     {
         c[i] = 'z';
