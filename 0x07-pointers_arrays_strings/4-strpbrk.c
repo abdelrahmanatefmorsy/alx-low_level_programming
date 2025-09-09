@@ -21,7 +21,7 @@ char *_strpbrk(char *s, char *accept)
             j = *ptr;
             vis[j] = 1;
         }
-        for (ptr = s; *ptr != ' ' && *ptr != '\0'; ptr++)
+        for (ptr = s;*ptr != '\0'; ptr++)
         {
             j = *ptr;
             if(vis[j])
