@@ -3,7 +3,7 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
-    int vis[1000] ={0};
+    int vis[1000] = {0};
     char *ptr;
     int sum = 0 , j;
     for (ptr = accept; *ptr != '\0'; ptr++)
